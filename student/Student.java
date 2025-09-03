@@ -2,9 +2,9 @@
 package student;
 
 public class Student {
-   int RollNo;
+  private int RollNo;
    private String Name;
-   protected String Department;
+   private String Department;
    char Section;
    static String collegeName = "KIET";
 
@@ -62,7 +62,7 @@ public class Student {
       student2.studying(9);
       student3.displayInfo();
    }
-}
+
 
 
 
@@ -94,3 +94,25 @@ public class Student {
 // inheritance uses extends keyword
 // subclass k constructor m agr parent ki property leni h toh this . krne ki need nhi we can use super keyword--super(Rollno,Name)
 
+// polymorphism ek function diff behaviour in diff class-
+// diff types- static polymorphism nd dynamic polymorphism
+
+
+public void search(int RollNo){
+   System.out.println("find by roll number");
+}
+public void search(int RollNo ,String Name){
+   System.out.println("find by roll number and name");
+}
+public void search(String Name ,String Department){
+   System.out.println("find by name nd department");
+}
+public void search(String Department ,char Section){
+   System.out.println("find by department nd section");
+}
+
+
+}
+
+// encapsulation
+// 

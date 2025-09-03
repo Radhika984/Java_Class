@@ -14,5 +14,16 @@ public class TestStudent {
       HostelStudent hs = new HostelStudent(3, "ABC", "IT", 'B', 68, "E805", "Gargi");
       hs.payFee();
       System.out.println(hs.hostel_name);
+
+Student st=new Student();
+st.search(1);
+st.search(1,"Radhika");
+st.search("Radhika","AIML");
+st.search("AIML",'C');
+      
+
    }
+
+  
+
 }
